@@ -6,53 +6,54 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="">
-        <a href=""><img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона"></a>
-
-        <button class="" type="button">Открыть меню</button>
+      <nav class="main-nav">
+        <a href="main-nav__logo">
+          <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Фото и Видео</a></li>
-            <li><a href="#">Форма отзыва</a></li>
-            <li><a href="#">Html Academy</a></li>
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item"><a href="#">Главная</a></li>
+            <li class="main-nav__list-item"><a href="#">Фото и Видео</a></li>
+            <li class="main-nav__list-item"><a href="#">Форма отзыва</a></li>
+            <li class="main-nav__list-item"><a href="#">Html Academy</a></li>
           </ul>
         </div>
-
       </nav>
     </header>
     <main class="page-main">
-      <img src="img/bg-back-mobile@1x.jpg" width="768" height="389" alt="СЕДОНА — небольшой городок в АРИЗОНЕ">
-      <h1>СЕДОНА — небольшой городок в АРИЗОНЕ, ЗАСЛУЖИвающий большего!</h1>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-
+      <h1 class="visually-hidden">Добро пожаловать в прекрасную Седону!</h1>
+      <img class="page-main__picture" src="img/bg-back-mobile@1x.jpg" width="768" height="389" alt="СЕДОНА — небольшой городок в АРИЗОНЕ">
       <section class="reasons">
-        <h2 class="visually-hidden">5 причин, чтобы приехать в Седону</h2>
-        <div>
-          <p>НАСТОЯЩИЙ ГОРОДОК  — №1 — СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-          <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Центр города">
+        <header class="reasons__header">
+          <h2 class="reasons__slogan">СЕДОНА — небольшой городок в АРИЗОНЕ, ЗАСЛУЖИвающий большего!</h2>
+          <p class="reasons__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </header>
+        <div class="reasons__reason-city reason-city">
+          <p class="reason-city__slogan">НАСТОЯЩИЙ ГОРОДОК  — №1 — СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          <img class="reason-city__picture" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Центр города">
         </div>
-        <div>
+        <div class="reasons__reason-lists advantages">
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--living">
-              <h3>Жилье</h3>
-              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <h3 class="advantages__item-slogan">Жилье</h3>
+              <p class="advantages__item-advice">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
             <li class="advantages__item advantages__item--food">
-              <h3>Еда</h3>
-              <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+              <h3 class="advantages__item-slogan">Еда</h3>
+              <p class="advantages__item-advice">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
             </li>
             <li class="advantages__item advantages__item--souvenirs">
-              <h3>Сувениры</h3>
-              <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+              <h3 class="advantages__item-slogan">Сувениры</h3>
+              <p class="advantages__item-advice">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
             </li>
           </ul>
         </div>
-        <div>
+        <div class="reasons__reason-bridge-of-devil">
           <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Основной мост в Седоне">
           <p>ТАМ ЕСТЬ Мост дьявола — №2 — Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <div>
+        <div class="reasons__reason-lists">
           <ul>
             <li><p>НЕБОЛЬШАЯ ПЛОЩАДЬ — №3 — ВСЕ интересные места находятся очень близко</p></li>
             <li><p>КРАСИВАЯ ДОРОГА   — №4 — ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p></li>
@@ -60,13 +61,13 @@
           </ul>
         </div>
       </section>
-      <article>
+      <article class="">
         <h2 class="visually-hidden">Найти гостиницу</h2>
         <h3>ЗАИНТЕРЕСОВАЛИСЬ?</h3>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a href="#">Найти гостиницу</a>
       </article>
-      <section>
+      <section class="">
         <h2 class="visually-hidden">Где мы находимся</h2>
         <img src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта местоположения">
       </section>
